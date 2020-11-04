@@ -1,9 +1,12 @@
+'use strict';
+
 class Thermostat {
     constructor() {
-        this.defaultTemp = 20;
+        this.currentTemp = 20;
     }
 
-    currentTemp() {
-        return this.defaultTemp;
-    }
+    temperature() {
+      return this.currentTemp;
+    } 
 };
+
