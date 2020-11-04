@@ -8,5 +8,9 @@ class Thermostat {
     temperature() {
       return this.currentTemp;
     } 
+
+    up(num) {
+      this.currentTemp += num;
+    }
 };
 
