@@ -6,11 +6,14 @@ class Thermostat {
     }
 
     temperature() {
-      return this.currentTemp;
-    } 
+        return this.currentTemp;
+    }
 
     up(num) {
-      this.currentTemp += num;
+        this.currentTemp += num;
+    }
+
+    down(num) {
+        this.currentTemp -= num;
     }
 };
-
