@@ -58,6 +58,12 @@ describe('Thermostat', function() {
       expect(thermostat.currentTemp()).toEqual(20);
     });
 
+    it('can return energy usage when below 18 degrees', function() {
+      expect(thermostat.energyUsage()).toEqual('low-usage');
+    });
+
+
+
     describe('when power saving mode is on', function() {
       it('will have a maximum temperature of 25 degrees when power saving mode is ON', function() {
         thermostat.up();
