@@ -59,15 +59,21 @@ describe('Thermostat', function() {
     });
 
     it('can return energy usage when below 18 degrees', function() {
-      thermostat.down()
-      thermostat.down()
+      thermostat.down();
+      thermostat.down();
       expect(thermostat.energyUsage()).toEqual('low-usage');
     });
 
     it('can return the energy usage as medium-usage when between 18-25 degrees', function() {
       expect(thermostat.energyUsage()).toEqual('medium-usage')
-    })
+    });
 
+    it('can return the energy usage as high-usage when more than 25 degrees', function() {
+      for (var i = 0; i < 10; i++) {
+        thermostat.up();
+      }
+      expect(thermostat.energyUsage()).toEqual('high-usage')
+    });
 
 
     describe('when power saving mode is on', function() {
