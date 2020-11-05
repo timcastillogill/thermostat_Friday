@@ -1,13 +1,13 @@
 # Thermostat
 
-A simple thermostat programe.
+A simple thermostat programe that allows a user to turn the temperature up and down.
 
 ### Specification:
 - The thermostat has a default temperature of 20 degrees. ✔  
 - You can increase the temperature with an up function. ✔️  
 - You can decrease the temperature with a down function. ✔️  
 - The minimum temperature is 10 degrees. ✔️   
-- There is a power saving mode that is turned on by default but can also be turned off.  
+- There is a power saving mode that is turned on by default but can also be turned off. ✔️   
 - When power saving mode is on the maximum temprature is 25 degrees.  
 - When power saving mode is off the maximum temperature is 32 degrees.  
 - You can reset the temprature to 20 with a reset function.
