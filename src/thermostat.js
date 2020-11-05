@@ -55,7 +55,7 @@ class Thermostat {
     };
 
     energyUsage() {
-      if (this.temperature >= 18) {
+      if (this.temperature <= 18) {
         return 'low-usage';
       }
 

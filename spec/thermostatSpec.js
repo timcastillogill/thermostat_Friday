@@ -59,8 +59,14 @@ describe('Thermostat', function() {
     });
 
     it('can return energy usage when below 18 degrees', function() {
+      thermostat.down()
+      thermostat.down()
       expect(thermostat.energyUsage()).toEqual('low-usage');
     });
+
+    it('can return the energy usage as medium-usage when between 18-25 degrees', function() {
+      expect(thermostat.energyUsage()).toEqual('medium-usage')
+    })
 
 
 
