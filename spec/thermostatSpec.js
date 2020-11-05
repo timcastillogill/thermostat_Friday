@@ -83,7 +83,7 @@ describe('Thermostat', function() {
         for (var i = 0; i < 13; i++) {
           thermostat.up();
         };
-        expect(thermostat.currentTemp()).toEqual(32)
+        expect(thermostat.currentTemp()).toEqual(32);
       });
     });
   });
