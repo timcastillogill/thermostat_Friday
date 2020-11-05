@@ -69,6 +69,7 @@ describe('Thermostat', function() {
     });
 
     it('can return the energy usage as high-usage when more than 25 degrees', function() {
+      thermostat.turnOffPowerSavingMode();
       for (var i = 0; i < 10; i++) {
         thermostat.up();
       }
