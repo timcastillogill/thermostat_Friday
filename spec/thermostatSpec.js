@@ -25,4 +25,8 @@ describe('Thermostat', function() {
       thermostat.down(2);
       expect(thermostat.currentTemp()).toEqual(18)
     })
+
+    it('has a power saving mode on by default', function() {
+      expect(thermostat.isPowerSavingMode()).toBe(true);
+    })
 })

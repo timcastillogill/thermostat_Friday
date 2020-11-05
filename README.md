@@ -6,7 +6,7 @@ A simple thermostat programe.
 - The thermostat has a default temperature of 20 degrees. ✔  
 - You can increase the temperature with an up function. ✔️  
 - You can decrease the temperature with a down function. ✔️  
-- The minimum temperature is 10 degrees.  
+- The minimum temperature is 10 degrees. ✔️   
 - There is a power saving mode that is turned on by default but can also be turned off.  
 - When power saving mode is on the maximum temprature is 25 degrees.  
 - When power saving mode is off the maximum temperature is 32 degrees.  

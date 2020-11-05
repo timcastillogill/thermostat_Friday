@@ -4,6 +4,7 @@ class Thermostat {
     constructor() {
       this.MIN_TEMP = 10;
       this.temperature = 20;
+      this.powerSavingMode = true;
     }
 
     currentTemp() {
@@ -13,6 +14,10 @@ class Thermostat {
     isMinTemp() {
       debugger;
       return this.temperature === this.MIN_TEMP;
+    }
+
+    isPowerSavingMode() {
+      return this.powerSavingMode === true;
     }
 
     up(num) {
