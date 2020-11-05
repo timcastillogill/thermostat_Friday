@@ -2,6 +2,8 @@
 
 class Thermostat {
     constructor() {
+      this.MAX_LIMIT_PSM_ON = 25;
+      this.MAX_LIMIT_PSM_OFF = 32;
       this.MIN_TEMP = 10;
       this.temperature = 20;
       this.powerSavingMode = true;
@@ -12,8 +14,14 @@ class Thermostat {
     }
 
     isMinTemp() {
-      debugger;
       return this.temperature === this.MIN_TEMP;
+    }
+
+    isMaxTemp() {
+      if (this.isPowerSavingModeOn() === false) {
+        return this.temperature === this.MAX_LIMIT_PSM_OFF;
+      }
+      return this.temperature === this.MAX_LIMIT_PSM_ON;
     }
 
     isPowerSavingModeOn() {
@@ -21,21 +29,24 @@ class Thermostat {
     }
 
     turnOffPowerSavingMode() {
-      return this.powerSavingMode = false
+      return this.powerSavingMode = false;
     }
 
     turnOnPowerSavingMode() {
-      return this.powerSavingMode = true
+      return this.powerSavingMode = true;
     }
 
-    up(num) {
-      this.temperature += num;
+    up() {
+      if (this.isMaxTemp()) {
+        return;
+      }
+      this.temperature += 1;
     }
 
-    down(num) {
+    down() {
       if (this.isMinTemp()) {
         return;
       }
-      this.temperature -= num;
+      this.temperature -= 1;
     }
 };
