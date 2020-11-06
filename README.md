@@ -17,10 +17,10 @@ A simple thermostat programe that allows a user to turn the temperature up and d
 
 ### What HTML do we need?
 
-1. Up Button
-2. Down Button
-3. Reset Button
-4. Power Saving Mode Button
-5. Display Power Saving Mode
+1. Up Button /
+2. Down Button /
+3. Reset Button /
+4. Power Saving Mode Button /
+5. Display Power Saving Mode /
 6. Display temperature
 7. Energy Usage Display
