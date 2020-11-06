@@ -1,18 +1,24 @@
 $(document).ready(function () {
-  //
-  // $('input').click(function (event) {
-  //   alert('It\'s getting hot in here!');
-  //   event.preventDefault();
-  // });
-  //
-  // $('input').addClass('tempUp');
 
-  // $('input').removeClass('tempUp');
+  $('input').addClass('tempUp');
+
+  $('input').removeClass('tempUp');
+
   $( 'input' ).click(function( event ) {
-    console.dir(event);
+    alert('It\'s getting hot in here!');
     event.preventDefault();
-
     $( this ).hide( 'slow' );
+  });
 
-  });'slow';
+  function myCallBack() {
+    console.log("My call back function")
+  };
+
+  $.get( "https://async-workshops-api.herokuapp.com/people",  (res) => {
+    console.log(res)
+  }, myCallBack());
+
+
+
+
 });
