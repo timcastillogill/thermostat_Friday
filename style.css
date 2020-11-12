@@ -1,0 +1,28 @@
+* {
+  background-image: url('./thermostat_image.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: 'Manjari', sans-serif;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 40px;
+}
+
+.button { 
+  background-color: white;
+  width: 500px;
+  height: 100px;
+}
+.low-usage {
+  color: green;
+}
+
+.medium-usage {
+  color: black; 
+}
+
+.high-usage {
+  color: red;
+}

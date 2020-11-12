@@ -2,11 +2,9 @@
 <html lang="en">
 
 <head>
-  <style>
-  input.tempUp {
-    color: red;
-  }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@700&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thermostat</title>
@@ -14,17 +12,28 @@
 
 <body>
   <section>
-    <h1 class="welcome">Welcome to your Firework Night Thermostat</h1>
+    <h1 class="welcome">Hot or Not?</h1>
     <h2 class="currentTemp">Temperature Display: </h2>
+    <h2 class="currentTempDisplay"></h2>
     <p>
-      <input type=button class="tempUp" value="+">
-      <input type=button class="tempDown" value="-">
-      <input type=button class="reset" value="Reset">
-      <input type=button class="powerSavingMode" value="PSM">
+      <input type=button class="button" id="up" value="+">
+      <input type=button class="button" id="down" value="-">
+      <input type=button class="button" id="reset" value="Reset">
+      <input type=button class="button" id="powerSavingMode" value="PSM">
       <!-- Do condition for on/off of PSM -->
     </p>
     <h3 class="energyUsage">Energy Usage Display:</h3>
   </section>
+
+  <section>
+    <h2>Current Temperature in your city is: <span id="current-temperature"></span> degrees C</h2>
+    <form id="select-city">
+      <input id="current-city" type="text" placeholder="Enter a city"></form>
+      <input type="submit"></input>
+    </form>
+  </section>
+
+
   <script src="src/thermostat.js"></script>
   <script src="jquery.js"></script>
   <script src="jqueryPlayground.js"></script>
